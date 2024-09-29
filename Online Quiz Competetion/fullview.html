@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FullScreen</title>
+  </head>
+  <!-- syles used -->
+  <link rel="stylesheet" href="./style/styles.css" />
+  <link rel="stylesheet" href="./style/infobox.css" />
+  <link rel="stylesheet" href="./style/quizbox.css" />
+  <link rel="stylesheet" href="./style/resultbox.css" />
+  <link rel="stylesheet" href="./style/timer.css" />
+
+
+ <!-- <link rel="stylesheet" href="./style.css" />--> 
+  <!-- CSS only -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+    crossorigin="anonymous"
+  />
+  <!-- JavaScript Bundle with Popper -->
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"
+  ></script>
+  <!-- jquery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <body>
+    <div class="container-fluid mt-3">
+      <!-- start button -->
+      <div class="start_btn"><button class="start_btn">Start Quiz</button></div>
+      <!-- Info Box-->
+      <div class="container mt-5 info_box">
+        <div class="info_title"><span>some rules of the quiz</span></div>
+        <div class="info_list">
+          <div class="info">1.you have</div>
+          <div class="info">1.you have</div>
+          <div class="info">1.you have</div>
+          <div class="info">1.you have</div>
+          <div class="info">5.you have</div>
+        </div>              
+        <div class="buttons">
+          <button class="quit">Exit quiz</button>
+          <button class="restart">Continue</button>
+        </div>
+      </div>
+      <!-- total timer -->
+      <div class="timer" id="timer">
+        <span class="time_left">Time Left:</span>
+        <span class="time_days" id="days" role="timer"></span>
+        <span class="time_hour" id="hours" role="timer"></span>h
+        <span class="time_minute" id="minutes" role="timer"></span>m
+        <span class="time_sec" id="seconds" role="timer"></span> s
+      </div>
+      <!-- quiz boz -->
+      <div class="container mt-3 quiz_box">
+        <header>
+          <div class="title">Questions</div>
+        </header>
+        <section>
+          <div class="que_text">
+            <!-- questions from javascript -->
+          </div>
+          <div class="option_list" id="optionlist">
+            <!-- inserted options from javascript -->
+          </div>
+        </section>
+        <footer>
+          <div class="total_que">
+            <!-- inserted question number from javascript -->
+          </div>
+          <button class="prev_btn">Previous</button>
+          <button class="next_btn">Next</button>
+        </footer>
+      </div>
+      <!-- result box -->
+      <div class="container mt-3 result_box">
+        <div class="complete_text">Completed Quiz</div>
+        <div class="score_text">
+          <!-- inserted score result from javascript -->
+        </div>
+        <div class="buttons">
+          <button class="quit">Exit Quiz</button>
+        </div>
+      </div>
+    </div>
+    <!-- JAVASCRIPT FILES
+     -->
+
+    <script src="./javascript/application.js"></script>
+    <script src="./javascript/questions.js"></script>
+    <script src="./javascript/questiondisplay.js"></script>
+    <script src="./javascript/prevent.js"></script>
+    <script src="./javascript/timer.js"></script>
+    <script src="./javascript/functions.js  "></script>
+  </body>
+</html>

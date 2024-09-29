@@ -1,0 +1,71 @@
+.timer.activeTimer {
+    justify-content: end;
+    opacity: 1;
+    user-select: none;
+    position: relative;
+    float: right;
+  
+    color: black;
+    background: white;
+  
+    height: 45px;
+    padding: 0 8px;
+    border-radius: 5px;
+    display: flex;
+    width: 266px;
+  }
+  
+  .timer {
+    justify-content: end;
+    opacity: 0;
+    user-select: none;
+    position: relative;
+    float: right;
+  
+    color: black;
+    background: white;
+  
+    height: 45px;
+    padding: 0 8px;
+    border-radius: 5px;
+    display: flex;
+    width: 266px;
+  }
+  
+  .timer .time_left {
+    font-weight: 400;
+    font-size: 17px;
+    user-select: none;
+  }
+  .timer .time_hour {
+    font-size: 17px;
+    font-weight: 400;
+  
+    width: 45px;
+  
+    text-align: center;
+  
+    user-select: none;
+  }
+  
+  .timer .time_minute {
+    font-size: 17px;
+    font-weight: 400;
+  
+    width: 45px;
+  
+    text-align: center;
+  
+    user-select: none;
+  }
+  
+  .timer .time_sec {
+    font-size: 17px;
+    font-weight: 400;
+  
+    width: 45px;
+  
+    text-align: center;
+  
+    user-select: none;
+  }
